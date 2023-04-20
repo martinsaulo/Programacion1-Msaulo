@@ -1,0 +1,15 @@
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\bin\Debug\net6.0\Repaso3.exe
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\bin\Debug\net6.0\Repaso3.deps.json
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\bin\Debug\net6.0\Repaso3.runtimeconfig.json
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\bin\Debug\net6.0\Repaso3.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\bin\Debug\net6.0\Repaso3.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\refint\Repaso3.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\Repaso3.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso3\obj\Debug\net6.0\ref\Repaso3.dll

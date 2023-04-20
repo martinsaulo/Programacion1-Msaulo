@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repaso_1", "Repaso_1\Repaso_1.csproj", "{E7AE462F-7262-4759-B4C1-7830A518F765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repaso_1", "Repaso_1\Repaso_1.csproj", "{E7AE462F-7262-4759-B4C1-7830A518F765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repaso_2", "Repaso_2\Repaso_2.csproj", "{745BBB82-43B2-4DE3-BD63-CEE94EC4290B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repaso_2", "Repaso_2\Repaso_2.csproj", "{745BBB82-43B2-4DE3-BD63-CEE94EC4290B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repaso3", "Repaso3\Repaso3.csproj", "{E07D6B2F-2DAC-4CEA-8477-08E99503E932}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{745BBB82-43B2-4DE3-BD63-CEE94EC4290B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745BBB82-43B2-4DE3-BD63-CEE94EC4290B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{745BBB82-43B2-4DE3-BD63-CEE94EC4290B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E07D6B2F-2DAC-4CEA-8477-08E99503E932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E07D6B2F-2DAC-4CEA-8477-08E99503E932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E07D6B2F-2DAC-4CEA-8477-08E99503E932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E07D6B2F-2DAC-4CEA-8477-08E99503E932}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
