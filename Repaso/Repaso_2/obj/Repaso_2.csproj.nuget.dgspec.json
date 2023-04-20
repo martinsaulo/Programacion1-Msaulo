@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\Repaso\\Repaso_2\\Repaso_2.csproj": {}
+    "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\Repaso\\Repaso_2\\Repaso_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\Repaso\\Repaso_2\\Repaso_2.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\Repaso\\Repaso_2\\Repaso_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Repaso\\Repaso_2\\Repaso_2.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\Repaso\\Repaso_2\\Repaso_2.csproj",
         "projectName": "Repaso_2",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Repaso\\Repaso_2\\Repaso_2.csproj",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\Repaso\\Repaso_2\\Repaso_2.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Repaso\\Repaso_2\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\Repaso\\Repaso_2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

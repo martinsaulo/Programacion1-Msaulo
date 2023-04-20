@@ -1,0 +1,15 @@
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\bin\Debug\net6.0\Repaso_2.exe
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\bin\Debug\net6.0\Repaso_2.deps.json
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\bin\Debug\net6.0\Repaso_2.runtimeconfig.json
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\bin\Debug\net6.0\Repaso_2.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\bin\Debug\net6.0\Repaso_2.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\refint\Repaso_2.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\Repaso_2.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Repaso\Repaso_2\obj\Debug\net6.0\ref\Repaso_2.dll
