@@ -91,7 +91,7 @@ do
 //Carga de pagos
 
 Console.WriteLine("Cargue los pagos, ingrese el código 0 para finalizar la carga.");
-double pagoCliente;
+double pagoCliente, totalPago;
 
 do
 {
@@ -116,10 +116,51 @@ do
     Console.Write("Ingrese el pago: ");
     pagoCliente = double.Parse(Console.ReadLine()!);
 
-    totalFactura = double.Parse(listaClientes[indiceCliente][4]) - pagoCliente;
+    totalPago = double.Parse(listaClientes[indiceCliente][5]) + pagoCliente;
 
-    listaClientes[indiceCliente][4] = totalFactura.ToString();
-
+    listaClientes[indiceCliente][5] = totalPago.ToString();
 
 } while (true);
 
+double deudaCliente, maxDeuda = 0, maxPago = 0;
+string clienteMaxDeuda = "Ninguno", emailMaxDeuda = "Ninguno";
+string clienteMaxPago = "Ninguno", emailMaxPago = "Ninguno";
+
+
+foreach (var cliente in listaClientes)
+{
+
+    //Comprobar deuda
+    deudaCliente = double.Parse(cliente[4]) - double.Parse(cliente[5]);
+    if (deudaCliente > 0)
+    {
+        Console.WriteLine(cliente[1] + " Deuda: " + deudaCliente);
+
+        if (deudaCliente > maxDeuda)
+        {
+            maxDeuda = deudaCliente;
+            clienteMaxDeuda = cliente[1];
+            emailMaxDeuda = cliente[3];
+        }
+    }
+
+    //Comprobar pagos
+
+    if (double.Parse(cliente[5]) > maxPago)
+    {
+        maxPago = double.Parse(cliente[5]);
+        clienteMaxPago = cliente[1];
+        emailMaxPago = cliente[3];
+    }
+}
+
+Console.WriteLine("El cliente que más debe es " + clienteMaxDeuda + " y su email es " + emailMaxDeuda);
+Console.WriteLine("El cliente que más pagó es " + clienteMaxPago + " y su email es " + emailMaxPago);
+
+foreach (var cliente in listaClientes)
+{
+    if ((double.Parse(cliente[5]) - double.Parse(cliente[4])) > 0)
+    {
+        Console.WriteLine(cliente[1] + " " + cliente[2]);
+    }
+}
