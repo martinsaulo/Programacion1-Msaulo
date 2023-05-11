@@ -1,0 +1,6 @@
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Clases\bin\Debug\Clases.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Clases\bin\Debug\Clases.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Clases\obj\Debug\Clases.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Clases\obj\Debug\Clases.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Clases\obj\Debug\Clases.pdb

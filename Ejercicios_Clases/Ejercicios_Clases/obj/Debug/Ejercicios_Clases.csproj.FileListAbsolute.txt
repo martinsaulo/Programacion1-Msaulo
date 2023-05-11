@@ -1,0 +1,11 @@
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\bin\Debug\Ejercicios_Clases.exe.config
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\bin\Debug\Ejercicios_Clases.exe
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\bin\Debug\Ejercicios_Clases.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\bin\Debug\Clases.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\bin\Debug\Clases.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\obj\Debug\Ejercicios_Clases.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\obj\Debug\Ejercicios_Clases.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\obj\Debug\Ejercicios_Clases.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\obj\Debug\Ejercicios_Clases.csproj.CopyComplete
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\obj\Debug\Ejercicios_Clases.exe
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Ejercicios_Clases\Ejercicios_Clases\obj\Debug\Ejercicios_Clases.pdb
