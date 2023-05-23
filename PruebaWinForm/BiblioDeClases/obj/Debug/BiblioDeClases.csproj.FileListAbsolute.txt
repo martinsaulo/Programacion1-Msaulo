@@ -1,0 +1,6 @@
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\PruebaWinForm\BiblioDeClases\bin\Debug\BiblioDeClases.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\PruebaWinForm\BiblioDeClases\bin\Debug\BiblioDeClases.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\PruebaWinForm\BiblioDeClases\obj\Debug\BiblioDeClases.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\PruebaWinForm\BiblioDeClases\obj\Debug\BiblioDeClases.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\PruebaWinForm\BiblioDeClases\obj\Debug\BiblioDeClases.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\PruebaWinForm\BiblioDeClases\obj\Debug\BiblioDeClases.pdb

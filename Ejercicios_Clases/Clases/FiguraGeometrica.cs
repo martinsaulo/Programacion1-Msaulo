@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class FiguraGeometrica
+    public abstract class FiguraGeometrica
     {
         public string Nombre { get; set; }
 
-        public double CalcularArea() 
-        {
-            return 0;
-        }
+        public abstract double CalcularArea();
     }
 }

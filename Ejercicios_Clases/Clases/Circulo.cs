@@ -11,7 +11,7 @@ namespace Clases
         public double Radio { get; set; }
 
 
-        public new double CalcularArea()
+        public override double CalcularArea()
         {
             return (Radio * Radio * Math.PI);
         }

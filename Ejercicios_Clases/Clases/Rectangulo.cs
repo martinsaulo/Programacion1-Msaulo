@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Cuadrado : FiguraGeometrica
+    public class Rectangulo : FiguraGeometrica
     {
-        public double Lado { get; set; }
+        public double Base { get; set; }
+        public double Altura { get; set; }
 
         public override double CalcularArea()
         {
-
-            return (Lado * Lado);
+            return Base * Altura;
         }
     }
 }

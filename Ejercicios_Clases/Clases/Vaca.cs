@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Vehiculo
+    public class Vaca : Animal
     {
-        public string Marca { get; set;}
-        public string Modelo { get; set;}
-        public int CantidadRuedas { get;}
+        public override void HacerSonido()
+        {
+            Console.WriteLine("Muuu");
+        }
     }
 }

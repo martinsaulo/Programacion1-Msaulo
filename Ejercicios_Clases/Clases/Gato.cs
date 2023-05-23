@@ -8,7 +8,7 @@ namespace Clases
 {
     public class Gato : Animal
     {
-        public new void HacerSonido()
+        public override void HacerSonido()
         {
             Console.WriteLine("Miau");
         }

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Perro : Animal
+    public abstract class InstrumentoMusical
     {
-        public override void HacerSonido()
-        {
-            Console.WriteLine("Guau");
-        }
+        public abstract void Tocar();
     }
 }

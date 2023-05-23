@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Animal
+    public abstract class Animal
     {
         public string NombreAnimal { get; set; }
-        public void HacerSonido() 
-        {
-        }
+        public abstract void HacerSonido();
     }
 }

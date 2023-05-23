@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Perro : Animal
+    internal class Bateria : InstrumentoMusical
     {
-        public override void HacerSonido()
+        public override void Tocar()
         {
-            Console.WriteLine("Guau");
+            Console.WriteLine("El instrumento que esta sonando es una Bateria.");
         }
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Motocicleta : Vehiculo
+    public interface IVehiculo
     {
-        public new int CantidadRuedas { get; set; } = 2;
+        double Velocidad { get; set; }
+        void Acelerar();
     }
 }

@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Automovil : Vehiculo
+    public class Automovil : IVehiculo
     {
-        public new int CantidadRuedas { get; } = 4;
+        public double Velocidad { get; set; } = 0;
+        public void Acelerar()
+        {
+            Velocidad += 50;
+        }
     }
 }
