@@ -44,6 +44,7 @@
     <Compile Include="Animal.cs" />
     <Compile Include="Asistente.cs" />
     <Compile Include="Automovil.cs" />
+    <Compile Include="Bateria.cs" />
     <Compile Include="CarritoDeCompra.cs" />
     <Compile Include="Circulo.cs" />
     <Compile Include="Cuadrado.cs" />
@@ -55,13 +56,18 @@
     <Compile Include="FiguraGeometrica.cs" />
     <Compile Include="Gato.cs" />
     <Compile Include="Gerente.cs" />
+    <Compile Include="Guitarra.cs" />
+    <Compile Include="InstrumentoMusical.cs" />
     <Compile Include="Libro.cs" />
-    <Compile Include="Motocicleta.cs" />
+    <Compile Include="Bicicleta.cs" />
     <Compile Include="Pelicula.cs" />
     <Compile Include="Perro.cs" />
+    <Compile Include="Piano.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vehiculo.cs" />
+    <Compile Include="Rectangulo.cs" />
+    <Compile Include="Vaca.cs" />
+    <Compile Include="IVehiculo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
