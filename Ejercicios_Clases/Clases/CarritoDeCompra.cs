@@ -9,15 +9,15 @@ namespace Clases
 {
     public class CarritoDeCompra
     {
-        public  List<Producto> Productos { get; set; } = new List<Producto>();
+        public  List<ProductoA> Productos { get; set; } = new List<ProductoA>();
 
-        public void AgregarProducto(Producto NuevoProducto) 
+        public void AgregarProducto(ProductoA NuevoProducto) 
         {
             Productos.Add(NuevoProducto);
         }
         public void EliminarProducto(int IdProducto) 
         {
-            Producto productoEliminado = new Producto();
+            ProductoA productoEliminado = new ProductoA();
             foreach (var producto in Productos) 
             {
 

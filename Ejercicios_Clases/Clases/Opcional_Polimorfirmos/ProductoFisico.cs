@@ -4,23 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clases.Opcional_Polimorfirmos
+namespace Clases
 {
     public class ProductoFisico : Producto
     {
         public double Peso { get; set; }
-        public ProductoFisico(double pesoProducto, string nombreProducto, double precioProducto) 
+        public ProductoFisico(double pesoProducto, string nombreProducto, decimal precioProducto) 
             : base(nombreProducto, precioProducto)
         {
             Peso = pesoProducto;
             Precio = precioProducto;
             Nombre = nombreProducto;
         }
-        public override double CalcularImpuesto()
+        public override decimal CalcularImpuesto()
         {
-            return Precio * 0.1f;
+            return Precio * 0.1;
         }
-        public override double CalcularTotal()
+        public override decimal CalcularTotal()
         {
             return Precio + CalcularImpuesto();
         }

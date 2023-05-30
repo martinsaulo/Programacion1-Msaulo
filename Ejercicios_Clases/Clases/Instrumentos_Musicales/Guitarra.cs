@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    internal class Guitarra : InstrumentoMusical
+    public class Guitarra : InstrumentoMusical
     {
         public override void Tocar()
         {

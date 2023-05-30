@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Clases.Opcional_Polimorfirmos
+namespace Clases
 {
     public class ProductoDigital : Producto
     {
         public int Tamanio { get; set; }
-        public override double CalcularImpuesto()
+        public override decimal CalcularImpuesto()
         {
             return Precio * 0.05f;
         }
-        public ProductoDigital(int tamanioProducto, string nombreProducto, double precioProducto)
+        public ProductoDigital(int tamanioProducto, string nombreProducto, decimal precioProducto)
             :base(nombreProducto, precioProducto)
         {
             Tamanio = tamanioProducto;
@@ -21,7 +21,7 @@ namespace Clases.Opcional_Polimorfirmos
             Precio = precioProducto;
         }
 
-        public override double CalcularTotal()
+        public override decimal CalcularTotal()
         {
             return Precio + CalcularImpuesto();
         }

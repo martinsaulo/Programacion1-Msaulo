@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Libro : Producto
+    public class Libro : ProductoA
     {
         public long ISBN { get; set; }
         public string Autor { get; set; }

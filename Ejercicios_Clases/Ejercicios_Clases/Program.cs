@@ -90,9 +90,31 @@ namespace Ejercicios_Clases
             foreach(var empleado in listaEmpleados)
             {
                 Console.WriteLine("Mi salario: " + empleado.CalcularSalario());
-            }*/
+            }
 
             //Instrumentos
+            List<InstrumentoMusical> listaInstrumentos = new List<InstrumentoMusical>();
+            listaInstrumentos.Add(new Piano());
+            listaInstrumentos.Add(new Guitarra());
+            listaInstrumentos.Add(new Bateria());
+
+            foreach(var instrumento in listaInstrumentos)
+            {
+                instrumento.Tocar();
+            }*/
+
+            // Ejercicio opcional
+
+            List<Producto> listaProductos = new List<Producto>();
+
+            listaProductos.Add(new ProductoFisico(1, "Harina", 100));
+            listaProductos.Add(new ProductoDigital(1024, "Avast", 100));
+
+            foreach (var item in listaProductos)
+            {
+                Console.WriteLine("Nombre: " + item.Nombre + " Impuesto: " + item.CalcularImpuesto() +
+                    " Total: " + item.CalcularTotal());
+            }
 
             Console.ReadKey();
 

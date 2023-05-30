@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Pelicula : Producto
+    public class Pelicula : ProductoA
     {
         public string Director { get; set; }
 
