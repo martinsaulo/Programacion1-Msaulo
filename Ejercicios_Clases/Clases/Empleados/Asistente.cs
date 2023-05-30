@@ -10,7 +10,7 @@ namespace Clases
     {
         public double Deduccion { get; set; }
 
-        public double CalcularSalario()
+        public override double CalcularSalario()
         {
             return Salario - Deduccion;
         }

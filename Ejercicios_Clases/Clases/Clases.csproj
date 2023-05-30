@@ -41,33 +41,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Asistente.cs" />
-    <Compile Include="Automovil.cs" />
-    <Compile Include="Bateria.cs" />
+    <Compile Include="Animales\Animal.cs" />
+    <Compile Include="Empleados\Asistente.cs" />
+    <Compile Include="Opcional_Polimorfirmos\Producto.cs" />
+    <Compile Include="Opcional_Polimorfirmos\ProductoDigital.cs" />
+    <Compile Include="Opcional_Polimorfirmos\ProductoFisico.cs" />
+    <Compile Include="Vehiculos\Automovil.cs" />
+    <Compile Include="Instrumentos_Musicales\Bateria.cs" />
     <Compile Include="CarritoDeCompra.cs" />
-    <Compile Include="Circulo.cs" />
-    <Compile Include="Cuadrado.cs" />
-    <Compile Include="CuentaBancaria.cs" />
-    <Compile Include="CuentaCorriente.cs" />
-    <Compile Include="CuentaDeAhorro.cs" />
+    <Compile Include="Figuras_Geometricas\Circulo.cs" />
+    <Compile Include="Figuras_Geometricas\Cuadrado.cs" />
+    <Compile Include="Cuentas_Bancarias\CuentaBancaria.cs" />
+    <Compile Include="Cuentas_Bancarias\CuentaCorriente.cs" />
+    <Compile Include="Cuentas_Bancarias\CuentaDeAhorro.cs" />
     <Compile Include="Disco.cs" />
-    <Compile Include="Empleado.cs" />
-    <Compile Include="FiguraGeometrica.cs" />
-    <Compile Include="Gato.cs" />
-    <Compile Include="Gerente.cs" />
-    <Compile Include="Guitarra.cs" />
-    <Compile Include="InstrumentoMusical.cs" />
+    <Compile Include="Empleados\Empleado.cs" />
+    <Compile Include="Figuras_Geometricas\FiguraGeometrica.cs" />
+    <Compile Include="Animales\Gato.cs" />
+    <Compile Include="Empleados\Gerente.cs" />
+    <Compile Include="Instrumentos_Musicales\Guitarra.cs" />
+    <Compile Include="Instrumentos_Musicales\InstrumentoMusical.cs" />
     <Compile Include="Libro.cs" />
-    <Compile Include="Bicicleta.cs" />
+    <Compile Include="Vehiculos\Bicicleta.cs" />
     <Compile Include="Pelicula.cs" />
-    <Compile Include="Perro.cs" />
-    <Compile Include="Piano.cs" />
+    <Compile Include="Animales\Perro.cs" />
+    <Compile Include="Instrumentos_Musicales\Piano.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rectangulo.cs" />
-    <Compile Include="Vaca.cs" />
-    <Compile Include="IVehiculo.cs" />
+    <Compile Include="Figuras_Geometricas\Rectangulo.cs" />
+    <Compile Include="Animales\Vaca.cs" />
+    <Compile Include="Vehiculos\IVehiculo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

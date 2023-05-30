@@ -10,7 +10,7 @@ namespace Clases
     {
         public double Bonificacion { get; set; }
 
-        public double CalcularSalario()
+        public override double CalcularSalario()
         {
             return Bonificacion + Salario;
         }

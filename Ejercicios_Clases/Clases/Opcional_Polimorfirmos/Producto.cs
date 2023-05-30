@@ -10,7 +10,7 @@ namespace Clases.Opcional_Polimorfirmos
     {
         public string Nombre { get; set; }
         public double Precio { get; set; }
-        public Producto(string nombreProducto, double precioProducto) 
+        public Producto(string nombreProducto, double precioProducto)
         {
             Nombre = nombreProducto;
             Precio = precioProducto;

@@ -7,10 +7,11 @@ using Clases;
 
 namespace Ejercicios_Clases
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            /*
             CarritoDeCompra nuevoCarrito = new CarritoDeCompra();
 
             Disco nuevoDisco = new Disco {Nombre = "disc1", Id = 1, Descripcion = "fsdf", 
@@ -34,7 +35,64 @@ namespace Ejercicios_Clases
             {
                 Console.WriteLine(item.Nombre);
             }
+            //Animales
+            List<Animal> listaAnimales = new List<Animal>();
+            listaAnimales.Add(new Gato());
+            listaAnimales.Add(new Perro());
+            listaAnimales.Add(new Vaca());
 
+            foreach (Animal a in listaAnimales)
+            {
+                a.HacerSonido();
+            }
+
+            //Vehiculo
+            List<IVehiculo> listaVehiculos = new List<IVehiculo>();
+            listaVehiculos.Add(new Automovil());
+            listaVehiculos.Add(new Bicicleta());
+
+            foreach (var vehiculo in listaVehiculos)
+            {
+                vehiculo.Acelerar();
+                Console.WriteLine("Mi velocidad es de: " + vehiculo.Velocidad);
+            }
+
+            //Figuras Geometricas
+            List<FiguraGeometrica> listaFiguras = new List<FiguraGeometrica>();
+            Cuadrado cuadrado = new Cuadrado();
+            cuadrado.Lado = 10;
+            listaFiguras.Add(cuadrado);
+            Circulo circulo = new Circulo();
+            circulo.Radio = 5;
+            listaFiguras.Add(circulo);
+            Rectangulo rectangulo = new Rectangulo();
+            rectangulo.Altura = 5;
+            rectangulo.Base = 10;
+            listaFiguras.Add(rectangulo);
+
+            foreach(var figura in listaFiguras)
+            {
+                Console.WriteLine("Mi area es de: " + figura.CalcularArea());
+            }
+
+            //Empleados
+            List<Empleado> listaEmpleados = new List<Empleado>();
+            Gerente gerente = new Gerente();
+            gerente.Salario = 1000;
+            gerente.Bonificacion = 100;
+            listaEmpleados.Add(gerente);
+
+            Asistente asistente = new Asistente();
+            asistente.Salario = 1000;
+            asistente.Deduccion = 100;
+            listaEmpleados.Add(asistente);
+
+            foreach(var empleado in listaEmpleados)
+            {
+                Console.WriteLine("Mi salario: " + empleado.CalcularSalario());
+            }*/
+
+            //Instrumentos
 
             Console.ReadKey();
 

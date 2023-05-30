@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    public class Empleado
+    public abstract class Empleado
     {
         public string Nombre { get; set; }
         public double Salario { get; set; }
+        public abstract double CalcularSalario();
     }
 }
