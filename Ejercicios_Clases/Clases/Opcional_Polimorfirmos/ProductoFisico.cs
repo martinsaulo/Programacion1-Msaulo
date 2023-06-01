@@ -18,7 +18,7 @@ namespace Clases
         }
         public override decimal CalcularImpuesto()
         {
-            return Precio * 0.1;
+            return Precio * 0.1m;
         }
         public override decimal CalcularTotal()
         {

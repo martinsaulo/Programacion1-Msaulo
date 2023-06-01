@@ -11,7 +11,7 @@ namespace Clases
         public int Tamanio { get; set; }
         public override decimal CalcularImpuesto()
         {
-            return Precio * 0.05f;
+            return Precio * 0.05m;
         }
         public ProductoDigital(int tamanioProducto, string nombreProducto, decimal precioProducto)
             :base(nombreProducto, precioProducto)
