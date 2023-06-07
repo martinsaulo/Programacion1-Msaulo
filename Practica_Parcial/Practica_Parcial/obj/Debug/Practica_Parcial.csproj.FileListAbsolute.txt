@@ -1,0 +1,6 @@
+C:\Users\Usuario\source\repos\Practica_Parcial\Practica_Parcial\bin\Debug\Practica_Parcial.dll
+C:\Users\Usuario\source\repos\Practica_Parcial\Practica_Parcial\bin\Debug\Practica_Parcial.pdb
+C:\Users\Usuario\source\repos\Practica_Parcial\Practica_Parcial\obj\Debug\Practica_Parcial.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Practica_Parcial\Practica_Parcial\obj\Debug\Practica_Parcial.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Practica_Parcial\Practica_Parcial\obj\Debug\Practica_Parcial.dll
+C:\Users\Usuario\source\repos\Practica_Parcial\Practica_Parcial\obj\Debug\Practica_Parcial.pdb
