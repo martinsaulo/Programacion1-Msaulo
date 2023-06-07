@@ -12,3 +12,17 @@ C:\Users\Usuario\source\repos\Practica_Parcial\Pantalla\obj\Debug\Pantalla.cspro
 C:\Users\Usuario\source\repos\Practica_Parcial\Pantalla\obj\Debug\Pantalla.csproj.CopyComplete
 C:\Users\Usuario\source\repos\Practica_Parcial\Pantalla\obj\Debug\Pantalla.exe
 C:\Users\Usuario\source\repos\Practica_Parcial\Pantalla\obj\Debug\Pantalla.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\bin\Debug\Pantalla.exe.config
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\bin\Debug\Pantalla.exe
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\bin\Debug\Pantalla.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\bin\Debug\Practica_Parcial.dll
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\bin\Debug\Practica_Parcial.pdb
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.Form1.resources
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.csproj.CopyComplete
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.exe
+C:\Users\Usuario\source\repos\Programacion1-Msaulo\Practica_Parcial\Pantalla\obj\Debug\Pantalla.pdb

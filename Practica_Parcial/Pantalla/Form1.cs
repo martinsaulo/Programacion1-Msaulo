@@ -126,6 +126,7 @@ namespace Pantalla
 
         private void listBoxItems_SelectedIndexChanged(object sender, EventArgs e)
         {
+            LimpiarDatos();
             if (listBoxItems.SelectedValue !=null)
             {
                 btnEliminar.Visible = true;
