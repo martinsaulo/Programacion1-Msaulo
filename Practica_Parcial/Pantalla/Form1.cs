@@ -117,9 +117,11 @@ namespace Pantalla
                 comboBoxLibroPrestamo.DataSource = ABM.ListaLibros.FindAll(x=>x.Disponible);
                 comboBoxLibroPrestamo.DisplayMember = "Titulo";
                 comboBoxLibroPrestamo.ValueMember = "Titulo";
+                comboBox1.DataSource = null;
                 comboBox1.DataSource = ABM.ListaClientes;
-                comboBox1.ValueMember = "NombreCompleto";
                 comboBox1.DisplayMember = "NombreCompleto";
+                comboBox1.ValueMember = "NombreCompleto";
+                
             }
             
         }
