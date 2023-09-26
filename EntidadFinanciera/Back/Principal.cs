@@ -95,6 +95,16 @@ namespace Back
                 }
             }
         }
-        public void GenerarResumenTarjeta() { }
+        public string GenerarResumenTarjeta(TarjetaCredito tarjeta) 
+        {
+            StringBuilder ret = new StringBuilder();
+
+            ret.AppendLine("Resumen:");
+            ret.AppendLine("Nro. tarjeta: " + tarjeta.NroTarjeta);
+            ret.AppendLine("Saldo: " + tarjeta.Saldo);
+            ret.AppendLine("Deuda: " + tarjeta.MontoDeuda);
+
+            return ret.ToString();
+        }
     }
 }

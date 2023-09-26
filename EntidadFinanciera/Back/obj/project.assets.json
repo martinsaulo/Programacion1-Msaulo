@@ -2861,11 +2861,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\EntidadFinanciera\\Back\\Back.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\EntidadFinanciera\\Back\\Back.csproj",
       "projectName": "Back",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\EntidadFinanciera\\Back\\Back.csproj",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\EntidadFinanciera\\Back\\Back.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\EntidadFinanciera\\Back\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\EntidadFinanciera\\Back\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

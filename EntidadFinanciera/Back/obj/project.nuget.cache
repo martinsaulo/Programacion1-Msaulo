@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kKWKjsELID8MRh03NcrtMi5RN8OSUfabyS7qhMfudhXSIS3NGMmJmZBCx3lNpSuBrMxZg+SC4z9dzzwtwN8z0w==",
+  "dgSpecHash": "qEyu9FeKsbyx88fkrX1SGFTkECEUz7hTAtIbMNOcC2Pu4BAdhDvNFJ897k3zIHhdGrbFdMQIzhCQcHmm20MD8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\EntidadFinanciera\\Back\\Back.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Programacion1-Msaulo\\EntidadFinanciera\\Back\\Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
