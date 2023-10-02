@@ -14,7 +14,7 @@ namespace Back
         public DbSet<TarjetaCredito> TarjetasDeCredito { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-FU6CNU8\\SQLEXPRESS;database=MiLibroDeRecetasBDD;trusted_connection=true;Encrypt=False");
+            optionsBuilder.UseSqlServer("server=DESKTOP-FU6CNU8\\SQLEXPRESS;database=EntidadFinancieraBDD;trusted_connection=true;Encrypt=False");
         }
     }
 }

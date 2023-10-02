@@ -17,16 +17,38 @@ namespace Back
             context.Clientes.Add(nuevoCliente);
             context.SaveChanges();
         }
-        public void CrearCuentaBancaria(int NroCuenta, Cliente Titular, Tipos Tipo)
+        public void EliminarCliente(int idCliente)
         {
-            CuentaBancaria nuevaCuenta = new CuentaBancaria(NroCuenta, Titular, Tipo);
+            Cliente clienteEncontrado = context.Clientes.Find(idCliente);
+
+            if(clienteEncontrado != null)
+            {
+                context.Clientes.Remove(clienteEncontrado);
+                context.SaveChanges();
+            }
+        }
+        public List<Cliente> DevolverClientes()
+        {
+            return context.Clientes.ToList();
+        }
+        public void CrearCuentaBancaria(Cliente Titular, Tipos Tipo)
+        {
+            CuentaBancaria nuevaCuenta = new CuentaBancaria();
+            nuevaCuenta.Titular = Titular;
+            nuevaCuenta.NombreTitular = Titular.NombreCompleto;
+            nuevaCuenta.Saldo = 0;
+            nuevaCuenta.Tipo = Tipo;
 
             context.CuentasBancarias.Add(nuevaCuenta);
             context.SaveChanges();
         }
-        public void RealizarDeposito(double Monto, int IdCuenta)
+        public List<CuentaBancaria> DevolverCuentas()
         {
-            var cuentaEncontrada = context.CuentasBancarias.Find(IdCuenta);
+            return context.CuentasBancarias.ToList();
+        }
+        public void RealizarDeposito(double Monto, int NroCuenta)
+        {
+            var cuentaEncontrada = context.CuentasBancarias.Find(NroCuenta);
 
             if (Monto > 0)
             {
@@ -37,9 +59,9 @@ namespace Back
                 }
             }
         }
-        public void RealizarExtraccion(double Monto, int IdCuenta)
+        public void RealizarExtraccion(double Monto, int NroCuenta)
         {
-            var cuentaEncontrada = context.CuentasBancarias.Find(IdCuenta);
+            var cuentaEncontrada = context.CuentasBancarias.Find(NroCuenta);
 
             if(cuentaEncontrada != null)
             {
@@ -65,9 +87,11 @@ namespace Back
                 }
             }
         }
-        public void EmitirTarjetaCredito(int NroTarjeta, Cliente Titular, double LimiteCredito, double Saldo)
+        public void EmitirTarjetaCredito(Cliente Titular_, double LimiteCredito, double Saldo)
         {
-            TarjetaCredito nuevaTarjeta = new TarjetaCredito(NroTarjeta, Titular, LimiteCredito, Saldo);
+            TarjetaCredito nuevaTarjeta = new TarjetaCredito(LimiteCredito, Saldo);
+            nuevaTarjeta.Titular = Titular_;
+            nuevaTarjeta.NombreTitular = Titular_.Nombre;
 
             context.TarjetasDeCredito.Add(nuevaTarjeta);
             context.SaveChanges();
@@ -88,23 +112,35 @@ namespace Back
 
             if(tarjetaEncontrada != null)
             {
-                if(tarjetaEncontrada.Estado == Estados.Activo && tarjetaEncontrada.MontoDeuda >= Monto)
-                {
-                    tarjetaEncontrada.MontoDeuda -= Monto;
+                if(tarjetaEncontrada.Estado == Estados.Activo)
+                {                    
+                    tarjetaEncontrada.MontoDeuda += Monto;
                     context.SaveChanges();
                 }
             }
         }
-        public string GenerarResumenTarjeta(TarjetaCredito tarjeta) 
+        public string GenerarResumenTarjeta(int idTarjeta) 
         {
-            StringBuilder ret = new StringBuilder();
+            TarjetaCredito tarjeta = context.TarjetasDeCredito.Find(idTarjeta);
+            if (tarjeta != null)
+            {
+                StringBuilder ret = new StringBuilder();
 
-            ret.AppendLine("Resumen:");
-            ret.AppendLine("Nro. tarjeta: " + tarjeta.NroTarjeta);
-            ret.AppendLine("Saldo: " + tarjeta.Saldo);
-            ret.AppendLine("Deuda: " + tarjeta.MontoDeuda);
+                ret.AppendLine("Resumen:");
+                ret.AppendLine("Nro. tarjeta: " + tarjeta.NroTarjeta);
+                ret.AppendLine("Titular: " + tarjeta.Titular.NombreCompleto);
+                ret.AppendLine("Limite credito: " + tarjeta.LimiteCredito);
+                ret.AppendLine("Saldo: " + tarjeta.Saldo);
+                ret.AppendLine("Deuda: " + tarjeta.MontoDeuda);
+                ret.AppendLine("Estado: " + tarjeta.Estado);
 
-            return ret.ToString();
+                return ret.ToString();
+            }
+            return "Error";
+        }
+        public List<TarjetaCredito> DevolverTarjetas()
+        {
+            return context.TarjetasDeCredito.ToList();
         }
     }
 }

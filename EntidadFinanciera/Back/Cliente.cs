@@ -8,15 +8,16 @@ namespace Back
 {
     public class Cliente
     {
-        public Cliente(string Nombre_, string Apellido_, int DNI_)
+        public Cliente(string nombre, string apellido, int dNI)
         {
-            Nombre = Nombre_;
-            Apellido = Apellido_;
-            DNI = DNI_;
+            Nombre = nombre;
+            Apellido = apellido;
+            DNI = dNI;
         }
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public int DNI { get; set; }
+        public string NombreCompleto { get { return Nombre + " " + Apellido; } }
     }
 }

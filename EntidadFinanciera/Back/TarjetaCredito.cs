@@ -4,26 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.ComponentModel.DataAnnotations;
 
 namespace Back
 {
     public class TarjetaCredito
     {
-        public TarjetaCredito(int Nrotarjeta_, Cliente Titular_, double LimiteCredito_, double Saldo_)
+        public TarjetaCredito(double limiteCredito, double saldo)
         {
-            NroTarjeta = Nrotarjeta_;
-            Titular = Titular_;
-            LimiteCredito = LimiteCredito_;
+            LimiteCredito = limiteCredito;
             Estado = Estados.Activo;
-            Saldo = Saldo_;
+            Saldo = saldo;
             MontoDeuda = 0;
         }
-        public int Id { get; set; }
-        public int NroTarjeta {  get; set; }
+        [Key]public int NroTarjeta {  get; set; }
         public double LimiteCredito { get; set; }
         public double Saldo { get; set; }
         public double MontoDeuda { get; set; }
         public Cliente Titular { get; set; }
+        public string NombreTitular { get; set; }
         public Estados Estado { get; set; }
     }
 }
