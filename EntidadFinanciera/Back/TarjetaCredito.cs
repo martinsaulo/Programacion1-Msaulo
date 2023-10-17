@@ -10,14 +10,8 @@ namespace Back
 {
     public class TarjetaCredito
     {
-        public TarjetaCredito(double limiteCredito, double saldo)
-        {
-            LimiteCredito = limiteCredito;
-            Estado = Estados.Activo;
-            Saldo = saldo;
-            MontoDeuda = 0;
-        }
-        [Key]public int NroTarjeta {  get; set; }
+        [Key]public int Id { get; set; }
+        public string NroTarjeta { get; set; }
         public double LimiteCredito { get; set; }
         public double Saldo { get; set; }
         public double MontoDeuda { get; set; }

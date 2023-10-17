@@ -92,7 +92,7 @@ namespace Front
             {
                 int indexFila = dataGridView1.CurrentCell.RowIndex;
 
-                MessageBox.Show(BDD.GenerarResumenTarjeta((int)dataGridView1[0, indexFila].Value));
+                MessageBox.Show(BDD.GenerarResumenTarjeta((string)dataGridView1[0, indexFila].Value));
             }
             else
             {
@@ -106,7 +106,7 @@ namespace Front
             {
                 int indexFila = dataGridView1.CurrentCell.RowIndex;
 
-                BDD.PagarTarjetaCredito((double)numPago.Value, (int)dataGridView1[0,indexFila].Value);
+                BDD.PagarTarjetaCredito((double)numPago.Value, (string)dataGridView1[0,indexFila].Value);
                 ActualizarDataGridView();
                 LimpiarCampos();
             }

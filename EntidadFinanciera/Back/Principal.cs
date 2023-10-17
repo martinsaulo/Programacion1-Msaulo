@@ -31,11 +31,12 @@ namespace Back
         {
             return context.Clientes.ToList();
         }
-        public void CrearCuentaBancaria(Cliente Titular, Tipos Tipo)
+        public void CrearCuentaBancaria(Cliente Titular_, Tipos Tipo)
         {
             CuentaBancaria nuevaCuenta = new CuentaBancaria();
-            nuevaCuenta.Titular = Titular;
-            nuevaCuenta.NombreTitular = Titular.NombreCompleto;
+            nuevaCuenta.NroCuenta = GenerarNroCuenta();
+            nuevaCuenta.Titular = Titular_;
+            nuevaCuenta.NombreTitular = Titular_.NombreCompleto;
             nuevaCuenta.Saldo = 0;
             nuevaCuenta.Tipo = Tipo;
 
@@ -46,7 +47,7 @@ namespace Back
         {
             return context.CuentasBancarias.ToList();
         }
-        public void RealizarDeposito(double Monto, int NroCuenta)
+        public void RealizarDeposito(double Monto, long NroCuenta)
         {
             var cuentaEncontrada = context.CuentasBancarias.Find(NroCuenta);
 
@@ -59,9 +60,9 @@ namespace Back
                 }
             }
         }
-        public void RealizarExtraccion(double Monto, int NroCuenta)
+        public void RealizarExtraccion(double Monto, string NroCuenta)
         {
-            var cuentaEncontrada = context.CuentasBancarias.Find(NroCuenta);
+            var cuentaEncontrada = context.CuentasBancarias.SingleOrDefault(x => x.NroCuenta == NroCuenta);
 
             if(cuentaEncontrada != null)
             {
@@ -72,12 +73,12 @@ namespace Back
                 }
             }
         }
-        public void RealizarTransferencia(double Monto, int IdCuentaOrigen, int IdCuentaDestinatario)
+        public void RealizarTransferencia(double Monto, string IdCuentaOrigen, string IdCuentaDestinatario)
         {
             if (Monto > 0)
             {
-                var cuentaOrigen = context.CuentasBancarias.Find(IdCuentaOrigen);
-                var cuentaDestinatario = context.CuentasBancarias.Find(IdCuentaDestinatario);
+                var cuentaOrigen = context.CuentasBancarias.SingleOrDefault(x=> x.NroCuenta == IdCuentaOrigen);
+                var cuentaDestinatario = context.CuentasBancarias.SingleOrDefault(x => x.NroCuenta == IdCuentaDestinatario);
 
                 if (cuentaOrigen != null && cuentaDestinatario != null && cuentaOrigen.Saldo >= Monto)
                 {
@@ -89,14 +90,17 @@ namespace Back
         }
         public void EmitirTarjetaCredito(Cliente Titular_, double LimiteCredito, double Saldo)
         {
-            TarjetaCredito nuevaTarjeta = new TarjetaCredito(LimiteCredito, Saldo);
+            TarjetaCredito nuevaTarjeta = new TarjetaCredito();
+            nuevaTarjeta.NroTarjeta = GenerarNroTarjeta();
             nuevaTarjeta.Titular = Titular_;
-            nuevaTarjeta.NombreTitular = Titular_.Nombre;
+            nuevaTarjeta.NombreTitular = Titular_.NombreCompleto;
+            nuevaTarjeta.LimiteCredito = LimiteCredito;
+            nuevaTarjeta.Saldo = Saldo;
 
             context.TarjetasDeCredito.Add(nuevaTarjeta);
             context.SaveChanges();
         }
-        public void CambiarEstadoTarjeta(int IdTarjeta, Estados Estado)
+        public void CambiarEstadoTarjeta(long IdTarjeta, Estados Estado)
         {
             var tarjetaEncontrada = context.TarjetasDeCredito.Find(IdTarjeta);
 
@@ -106,9 +110,9 @@ namespace Back
                 context.SaveChanges();
             }
         }
-        public void PagarTarjetaCredito(double Monto, int IdTarjeta)
+        public void PagarTarjetaCredito(double Monto, string IdTarjeta)
         {
-            var tarjetaEncontrada = context.TarjetasDeCredito.Find(IdTarjeta);
+            var tarjetaEncontrada = context.TarjetasDeCredito.SingleOrDefault(x=> x.NroTarjeta == IdTarjeta);
 
             if(tarjetaEncontrada != null)
             {
@@ -119,9 +123,9 @@ namespace Back
                 }
             }
         }
-        public string GenerarResumenTarjeta(int idTarjeta) 
+        public string GenerarResumenTarjeta(string idTarjeta) 
         {
-            TarjetaCredito tarjeta = context.TarjetasDeCredito.Find(idTarjeta);
+            TarjetaCredito tarjeta = context.TarjetasDeCredito.SingleOrDefault(x=> x.NroTarjeta == idTarjeta);
             if (tarjeta != null)
             {
                 StringBuilder ret = new StringBuilder();
@@ -141,6 +145,60 @@ namespace Back
         public List<TarjetaCredito> DevolverTarjetas()
         {
             return context.TarjetasDeCredito.ToList();
+        }
+        public bool NroCuentaYaExistente(string nroCuenta) 
+        {
+            return context.CuentasBancarias.Any(x => x.NroCuenta == nroCuenta);
+        }
+        public bool NroTarjetaYaExistente(string nroTarjeta)
+        {
+            return context.TarjetasDeCredito.Any(x => x.NroTarjeta == nroTarjeta);
+        }
+        public string GenerarNroTarjeta()
+        {
+            string nuevoNro = "";
+            Random rnd = new Random();
+            int cont = 0;
+
+            do
+            {
+                cont++;
+                nuevoNro += 
+                    "1234-" + rnd.Next(1000, 9999) +"-"+ rnd.Next(1000, 9999) +"-"+ rnd.Next(1000, 9999);
+            } while (NroTarjetaYaExistente(nuevoNro) && cont < 15);
+
+            if (cont != 15)
+            {
+                return nuevoNro;
+            }
+            else
+            {
+                throw new Exception("No se pudo generar un nro valido.");
+            }
+
+        }
+        public string GenerarNroCuenta()
+        {
+            string nuevoNro = "";
+            Random rnd = new Random();
+            int cont = 0;
+
+            do
+            {
+                cont++;
+                nuevoNro += 
+                    "4321-" + rnd.Next(1000, 9999) +"-"+ rnd.Next(1000, 9999) +"-"+ rnd.Next(1000, 9999);
+            } while (NroCuentaYaExistente(nuevoNro) && cont < 15);
+
+            if(cont != 15)
+            {
+                return nuevoNro;
+            }
+            else
+            {
+                throw new Exception("No se pudo generar un nro valido.");
+            }
+            
         }
     }
 }

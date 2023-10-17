@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Back.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231001222931_Migracion01")]
-    partial class Migracion01
+    [Migration("20231017132529_Migracion0")]
+    partial class Migracion0
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,11 +50,19 @@ namespace Back.Migrations
 
             modelBuilder.Entity("Back.CuentaBancaria", b =>
                 {
-                    b.Property<int>("NroCuenta")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NroCuenta"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("NombreTitular")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NroCuenta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Saldo")
                         .HasColumnType("float");
@@ -65,7 +73,7 @@ namespace Back.Migrations
                     b.Property<int>("TitularId")
                         .HasColumnType("int");
 
-                    b.HasKey("NroCuenta");
+                    b.HasKey("Id");
 
                     b.HasIndex("TitularId");
 
@@ -74,11 +82,11 @@ namespace Back.Migrations
 
             modelBuilder.Entity("Back.TarjetaCredito", b =>
                 {
-                    b.Property<int>("NroTarjeta")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NroTarjeta"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Estado")
                         .HasColumnType("int");
@@ -89,13 +97,21 @@ namespace Back.Migrations
                     b.Property<double>("MontoDeuda")
                         .HasColumnType("float");
 
+                    b.Property<string>("NombreTitular")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NroTarjeta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("Saldo")
                         .HasColumnType("float");
 
                     b.Property<int>("TitularId")
                         .HasColumnType("int");
 
-                    b.HasKey("NroTarjeta");
+                    b.HasKey("Id");
 
                     b.HasIndex("TitularId");
 

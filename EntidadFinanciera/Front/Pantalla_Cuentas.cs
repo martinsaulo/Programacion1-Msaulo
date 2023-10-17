@@ -33,7 +33,7 @@ namespace Front
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (comboBoxTipo.SelectedItem == null || comboBoxTitular.SelectedItem == null)
+            if (comboBoxTipo.SelectedIndex == -1 || comboBoxTitular.SelectedItem == null)
             {
                 MessageBox.Show("Complete todos los campos.");
             }
@@ -95,7 +95,7 @@ namespace Front
                 else
                 {
                     int indexFila = dataGridView1.CurrentCellAddress.Y;
-                    BDD.RealizarExtraccion((double)numericUpDown1.Value, (int)dataGridView1[0, indexFila].Value);
+                    BDD.RealizarExtraccion((double)numericUpDown1.Value, (string)dataGridView1[0, indexFila].Value);
                     ActualizarDataGridView();
 
                     numericUpDown1.Value = 0;

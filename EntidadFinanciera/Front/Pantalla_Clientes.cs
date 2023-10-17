@@ -48,6 +48,7 @@ namespace Front
         private void Pantalla_Clientes_Load(object sender, EventArgs e)
         {
              ActualizarLista();
+            numDNI.Controls[0].Visible = false;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
